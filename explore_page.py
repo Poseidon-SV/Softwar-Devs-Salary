@@ -55,7 +55,7 @@ def clean_devType(x):
     return str(x)
 
 
-df = pd.read_csv('dataset/survey_results_public.csv')
+df = pd.read_csv('https://media.githubusercontent.com/media/Poseidon-SV/Datasets/main/survey_results_public.csv')
 
 col_list=["Country", "EdLevel", "YearsCodePro", "Employment", "RemoteWork", 
           "YearsCode", "Age", "WorkExp", "MainBranch", "DevType", "ConvertedCompYearly"]
