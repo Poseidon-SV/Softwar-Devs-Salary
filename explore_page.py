@@ -90,7 +90,7 @@ dev_map = shorten_categories(df.DevType.value_counts(), 150)
 df['DevType'] = df['DevType'].map(dev_map)
 # df = df[df['DevType'] != 'others']
 
-@st.cache
+# @st.cache
 def show_explore_page():
     st.title("Explore Software Engineer Salaries")
 
