@@ -21,9 +21,9 @@ le_DevType = data['le_DevType']
 
 
 def show_predict_page():
-    st.title("Software Developer Salary Prediction")
+    st.title("Software Developer Salary Prediction App 👨‍💻")
 
-    st.write("""### We need some information to predict the salary""")
+    st.write("""### We need some information to predict the salary (Please fill in all details)""")
 
     countries = (
         'United Kingdom',
@@ -87,12 +87,12 @@ def show_predict_page():
     country = st.selectbox("Country", countries)
     education = st.selectbox("Education Level", educations)
     remoteWork = st.selectbox("Remote work", remoteWorks)
-    age = st.slider("Your age", 15, 80, step=1)
+    age = st.slider("Your age", 15, 80, 21, step=1,)
     mainBranch = st.selectbox("Status as a developer", mainBranchs)
     devType = st.radio("Developer Profile", devTypes)
-    yearsCoded = st.number_input("Years you have been coding in total", 0, 50)
-    yearsCodePro = st.number_input("Years you have coded professionally", 0, 50)
-    expericence = st.slider("Years of Working Experience", 0, 50, 3)
+    yearsCoded = st.number_input("Years you have been coding in total", 0, 50, 2)
+    yearsCodePro = st.number_input("Years you have coded professionally", 0, 50, 1)
+    expericence = st.slider("Years of Working Experience", 0, 50, 2)
 
     if age < 18:
         age = ages[6]
